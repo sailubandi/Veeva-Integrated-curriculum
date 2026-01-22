@@ -46,9 +46,10 @@
 
 ---
 
-## 7. Author
+##  Author
 Bandi Poorna Sri Sailaja  
 B.Tech – Artificial Intelligence and Machine Learning
+
 
 
 
