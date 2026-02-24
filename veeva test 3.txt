@@ -1,0 +1,42 @@
+veeva Integrated program
+Assessment-3
+
+subject: Linux operating system concepts
+Practical Assessment type
+
+
+1)Linux script to search files
+
+A) Write a script to check if a file exist in system or not 
+
+a) check if a file exist in current directory or not 
+b) check if file exist in any part in system or not 
+
+B) write a Linux script that search for the file modified with in last three days  with in the  current directory
+
+c) write a Linux script that search for file larger than 1kb in current directory
+d) write a Linux script that search file with specific extension in current directory
+
+2)text processing and searching pattern
+a) write  Linux script that search for specific string in  given text file
+b) consider html file as input and write a Linux script to extract text between specified html tag
+
+3)write a script that log message to a file log .txt 
+a)write a script that file log error to separate file error.txt
+
+
+subject : sdlc , agile software model and the scrum
+
+
+1)what is the agile manifesto how me control the product development
+
+2)explain and analyze the difference between burndown and burn up chart
+
+3)how do you handle changing req in agile project 
+
+4)how do you handle a situation where testing not completed with in sprint
+
+5)how do you estimate your tickets 
+
+6) what do you when your automated suite is failed
+
