@@ -1,0 +1,3 @@
+Linux is powerful
+I love Linux scripting
+Shell scripting is useful
