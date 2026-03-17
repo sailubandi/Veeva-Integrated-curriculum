@@ -14,27 +14,22 @@ public class question1 {
 
     public static void main(String[] args) throws Exception {
 
-        // 🔹 Step 1: Load Excel File (UPDATE PATH)
     	FileInputStream file = new FileInputStream("C:/Users/sailu/Downloads/my.xlsx");
         XSSFWorkbook workbook = new XSSFWorkbook(file);
         XSSFSheet sheet = workbook.getSheetAt(0);
 
         int rows = sheet.getLastRowNum();
 
-        // 🔹 Step 2: Setup WebDriver
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
-        // 🔹 Step 3: Loop through Excel Data
         for (int i = 1; i <= rows; i++) {
 
             String username = sheet.getRow(i).getCell(0).getStringCellValue();
             String password = sheet.getRow(i).getCell(1).getStringCellValue();
 
-            // 🔹 Step 4: Open Application (REAL URL)
             driver.get("https://practicetestautomation.com/practice-test-login/");
 
-            // 🔹 Step 5: Perform Login
             driver.findElement(By.id("username")).clear();
             driver.findElement(By.id("username")).sendKeys(username);
 
@@ -43,13 +38,12 @@ public class question1 {
 
             driver.findElement(By.id("submit")).click();
 
-            // 🔹 Step 6: Validation
             String currentUrl = driver.getCurrentUrl();
 
             if (currentUrl.contains("logged-in-successfully")) {
-                System.out.println("✅ Login SUCCESS for: " + username);
+                System.out.println("Login SUCCESS for: " + username);
             } else {
-                System.out.println("❌ Login FAILED for: " + username);
+                System.out.println(" Login FAILED for: " + username);
             }
         }
 
